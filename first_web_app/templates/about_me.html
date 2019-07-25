@@ -1,16 +1,40 @@
-<h1>About Me </h1> 
-<p> I am a developer from Toronto </p> 
 
-<h2><u>Skills</u></h2> 
-{% for skill in skills %}
-    <ul>
-    <li> {{skill}} </li> 
-    </ul> 
-{% endfor %} 
+<!DOCTYPE html>
 
-<h2><u>Interests </u></h2> 
-{% for interest in interests %}
-    <ul> 
-    <li> {{interest}} </li> 
-    </ul> 
-{% endfor %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style> 
+        h1, h2, p, li   { 
+            text-align: center; 
+        }
+        li { 
+            list-style: none; 
+            margin-right: 50px; 
+        } 
+        </style> 
+
+    </head>
+    <body>
+      <h1>About Me </h1> 
+        <p> I am a developer from Toronto </p> 
+
+        <h2><u>Skills</u></h2> 
+        {% for skill in skills %}
+            <ul>
+            <li> {{skill}} </li> 
+            </ul> 
+        {% endfor %} 
+        <h2><u>Interests </u></h2> 
+        {% for interest in interests %}
+            <ul> 
+            <li> {{interest}} </li> 
+            </ul> 
+        {% endfor %}
+        <script src="" async defer></script>
+    </body>
+</html>

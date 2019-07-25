@@ -17,15 +17,15 @@ Including another URLconf
 
 from django.urls import path
 from first_web_app.views import gallery, home_page, favourites, about_me, root, portfolio
-
+from first_web_app import views 
 
 
 urlpatterns = [
     path('', root), 
-    path('home/', home_page), 
-    path('portfolio/', gallery), 
-    path('about_me/', about_me), 
-    path('favourites/', favourites),
-    path('gallery/', portfolio),  
+    path('home/', views.home_page), 
+    path('portfolio/', views.gallery), 
+    path('about_me/', views.about_me), 
+    path('favourites/', views.favourites),
+    path('gallery/', views.portfolio),  
 ]
 

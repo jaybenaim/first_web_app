@@ -1,7 +1,30 @@
 
-<p> Check out my favourite sites <br /> 
-<br /> 
-{% for link in fave_links %}
-<a href='#'> {{link}} </a> 
-{% endfor %}
-</p> 
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style> 
+        p { 
+            text-align: center; 
+            font-size: 40px; 
+            color: red; 
+        }
+        a { 
+            display: block; 
+            padding: 20px 0; 
+        }
+        </style> 
+    </head>
+    <body>
+        <p> Check out my favourite sites <br /> 
+            <br /> 
+            {% for link in fave_links %}
+                <a href='#'> {{link}} </a> 
+            {% endfor %}
+        </p> 
+    </body>
+</html>

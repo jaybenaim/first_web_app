@@ -25,8 +25,8 @@ def portfolio(request):
 
 def about_me(request): 
     context = {
-        'skills': ['Management skills', 'Problem Solving', 'work well under pressure'],
-        'interests': ['cooking', 'guitar']
+        'skills': ['Management skills', 'Problem Solving', 'Work well under pressure'],
+        'interests': ['Cooking', 'Guitar']
     }
     response = render(request, 'about_me.html', context) 
     return HttpResponse(response) 

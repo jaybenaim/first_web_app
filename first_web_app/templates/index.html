@@ -1,12 +1,48 @@
 
-<head> 
+<!DOCTYPE html>
 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
 
-</head> 
+    <style>
+        @keyframes change_color { 
+            10% { 
+                color: red; 
+            }
+            20% { 
+                color: green; 
+            }
+            40% { 
+                color: yellow; 
+            }
+            80% { 
+                color: purple; 
+            }
+        }
+        h1 { 
+            animation: 3s infinite; 
+            animation-name: change_color;
+            text-align: center;  
+        }
+        a { 
+            display: block;
+            text-align: center; 
+        }
+    </style> 
+    </head>
+    <body>
+      <h1>Hi {{ name }}, Welcome To My Home Page!</h1>
 
-<h1>Hi {{ name }}, Welcome To My Home Page!</h1>
+        <a href="/about_me"> About me</a> 
+        <br />
+        <a href="/favourites"> Favourites </a> 
+        <br /> <a href="/portfolio">Gallery </a> 
+        <script src="" async defer></script>
+    </body>
+</html>
 
-<a href="about_me"> About me</a> 
-<br />
-<a href="favourites"> Favourites </a> 
-<br /> <a href="portfolio">Gallery </a> 
