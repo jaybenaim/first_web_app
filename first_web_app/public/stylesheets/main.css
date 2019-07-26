@@ -1,0 +1,51 @@
+
+
+    @keyframes change_color { 
+        10% { 
+            color: red; 
+        }
+        30% { 
+            color: green; 
+        }
+        50% { 
+            color: teal; 
+        }
+        80% { 
+            color: purple; 
+        }
+    }
+    h1 { 
+        animation: 3s infinite; 
+        animation-name: change_color;
+        text-align: center; 
+        position: relative; 
+        top: 200px; 
+        border: 3px solid lightblue; 
+        padding: 40px 0; 
+        background: tan; 
+        border-radius: 5px; 
+    }
+    nav { 
+        display: flex; 
+        width: 100%;  
+    }
+    a { 
+        display: block;
+        text-align: center; 
+        position: relative; 
+        top: 220px; 
+        border: 3px solid lightblue; 
+        padding: 40px 0; 
+        background: tan; 
+        border-radius: 5px; 
+        font-size: 22px;
+        width: 200px; 
+        margin-left: 45px;  
+        
+    }
+    body { 
+        background-size: 400px 400px; 
+        background: rgba(0,0,0,0.95);  
+    }
+
+

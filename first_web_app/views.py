@@ -32,6 +32,7 @@ def about_me(request):
     return HttpResponse(response) 
 
 def favourites(request): 
-    context = { 'fave_links': ['link1', 'link2', 'link3']}
+    context = { 'fave_links': ['http://hackertyper.com/', 'https://findtheinvisiblecow.com/', 'https://www.incredibox.com/demo/v1', 'http://www.flashbynight.com/', 'https://www.autodraw.com', 'http://bomomo.com/', 'http://weavesilk.com/', 'http://www.movenowthinklater.com/', 'https://www.addictivetips.com/','https://www.dafont.com/','https://mashable.com/article/websites-to-waste-time/', 'http://www.koalastothemax.com/']}
+    
     response = render(request, 'favourites.html', context) 
     return HttpResponse(response) 
