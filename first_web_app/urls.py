@@ -21,6 +21,7 @@ from first_web_app import views
 
 
 urlpatterns = [
+    
     path('', root), 
     path('home/', views.home_page), 
     path('portfolio/', views.gallery), 
